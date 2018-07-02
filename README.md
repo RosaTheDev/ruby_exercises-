@@ -4,7 +4,7 @@ A collection of exercises to practice various Ruby concepts.
 
 Getting Started
 
-$ git clone https://github.com/turingschool/ruby-exercises.git
+$ git clone git@github.com:RosaTheDev/ruby_exercises-.git
 $ cd ruby-exercises
 $ gem install bundler
 $ bundle install
