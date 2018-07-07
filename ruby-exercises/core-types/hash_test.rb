@@ -61,8 +61,6 @@ class HashTest < Minitest::Test
     plants[:hollyhock] = ["Majorette Mix"]
     plants[:dahlia] += ["Jitterbug"]
 
-    expected_dahlias = ["Crichton Honey", "Whimsey", "Kasasagi", "Jitterbug"]
-
     assert_equal ____, plants[:dahlia]
     assert_equal ____, plants[:snapdragon]
     assert_equal ____, plants[:hollyhock]
@@ -149,9 +147,6 @@ class HashTest < Minitest::Test
     h1 = {"a" => "apple", "b" => "banana"}.invert
     h2 = {1 => "one", 2 => "two"}.invert
 
-    expected_h1 = {"apple" => "a", "banana" => "b"}
-    expected_h2 = {"one" => 1, "two" => 2}
-
     assert_equal ____, h1
     assert_equal ____, h2
   end
@@ -164,8 +159,6 @@ class HashTest < Minitest::Test
       potatoes: ["brown", "red", "purple"]
     }.invert
 
-    expected_food_colors = {"purple" => :beets, "green" => :kiwis  }
-    expected_foods_with_many_colors = { ["green", "red", "yellow"] => :apples, ["brown", "red", "purple"] => :potatoes}
 
     assert_equal ____, food_colors
     assert_equal ____, foods_with_many_colors
@@ -186,13 +179,6 @@ class HashTest < Minitest::Test
     h3 = apple.merge({"b" => "banana"})
     h4 = apple.merge({"a" => "avocado", "b" => "banana"})
     h5 = {"a" => "apple", "b" => "banana"}.merge({"b" => "breadfruit"})
-
-    expected_h1 = {}
-    expected_h2 = {"a" => "apple"}
-    expected_apple = {"a" => "apple"}
-    expected_h3 = {"a" => "apple", "b" => "banana"}
-    expected_h4 = {"a" => "avocado", "b" => "banana"}
-    expected_h5 = {"a" => "apple", "b" => "breadfruit"}
 
     assert_equal ____, h1
     assert_equal ____, h2
@@ -215,13 +201,6 @@ class HashTest < Minitest::Test
     tv_characters = tv_characters.merge({breaking_bad: "Walter White"})
     shape_sides = {circle: 1}.merge({square: 4, circle: "infinite"})
 
-    expected_favorite_restaurants = {cultura: "Latin American", wallys: "Wisconsin treats"}
-    expected_name_lengths = {maeby: 5, selena: 6}
-    expected_planet_rings = {saturn: 7, jupiter: 3, uranus: 13, neptune: 6}
-    expected_saturn = {saturn: 7}
-    expected_tv_characters = {battlestar: ["Starbuck", "Apollo", "Boomer"], futurama: ["Fry", "Leela", "Bender", "Zoidberg"], breaking_bad: "Walter White"}
-    expected_shape_sides = {circle: "infinite", square: 4}
-
     assert_equal ____, favorite_restaurants
     assert_equal ____, name_lengths
     assert_equal ____, planet_rings
@@ -238,13 +217,6 @@ class HashTest < Minitest::Test
     h3 = apple.update({"b" => "banana"})
     h4 = apple.update({"a" => "avocado", "b" => "banana"})
     h5 = {"a" => "apple", "b" => "banana"}.update({"b" => "breadfruit"})
-
-    expected_h1 = {}
-    expected_h2 = {"a" => "apple"}
-    expected_apple = {"a" => "avocado", "b" => "banana"}
-    expected_h3 = {"a" => "avocado", "b" => "banana"}
-    expected_h4 = {"a" => "avocado", "b" => "banana"}
-    expected_h5 = {"a" => "apple", "b" => "breadfruit"}
 
     assert_equal ____, h1
     assert_equal ____, h2
@@ -268,13 +240,6 @@ class HashTest < Minitest::Test
     tv_characters.update({breaking_bad: "Walter White"})
     shape_sides = {circle: 1}.update({square: 4, "circle": "infinite"})
 
-    expected_favorite_restaurants = {"cultura": "Latin American", "wallys": "Wisconsin treats"}
-    expected_name_lengths = {maeby: 5, selena: 6}
-    expected_name_lengths_2 = {"maeby": 5, selena: 6}
-    expected_planet_rings = {saturn: 7, jupiter: 3, uranus: 13, neptune: 6}
-    expected_saturn = {saturn: 7, jupiter: 3, uranus: 13, neptune: 6}
-    expected_tv_characters = {battlestar: ["Starbuck", "Apollo", "Boomer"], futurama: ["Fry", "Leela", "Bender", "Zoidberg"], breaking_bad: "Walter White"}
-    expected_shape_sides = {"circle": "infinite", square: 4}
 
     assert_equal ____, favorite_restaurants
     assert_equal ____, name_lengths

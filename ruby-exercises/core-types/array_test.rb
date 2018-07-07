@@ -9,21 +9,21 @@ class ArrayTest < Minitest::Test
   end
 
   def test_first
-    # skip
+    skip
     assert_equal ____, [].first
     assert_equal ____, [:a, :b, :c].first
     assert_equal ____, ["spoon"].first
   end
 
   def test_last
-    # skip
+    skip
     assert_equal ____, [].last
     assert_equal ____, [:a, :b, :c].last
     assert_equal ____, ["spoon"].last
   end
 
   def test_access
-    # skip
+    skip
     assert_equal ____, [][0]
     assert_equal ____, ["a", "b", "c"][0]
     assert_equal ____, ["a", "b", "c"][1]
@@ -33,7 +33,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_index
-    # skip
+    skip
     assert_equal ____, ["a", "b", "c"].index("a")
     assert_equal ____, ["a", "b", "c"].index("b")
     assert_equal ____, ["a", "b", "c"].index("c")
@@ -41,7 +41,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_join
-    # skip
+    skip
     assert_equal ____, [].join
     assert_equal ____, [].join(' ')
     assert_equal ____, [].join(' - ')
@@ -54,7 +54,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_length
-    # skip
+    skip
     assert_equal ____, [].length
     assert_equal ____, [:a].length
     assert_equal ____, [:a, :b].length
@@ -62,13 +62,13 @@ class ArrayTest < Minitest::Test
   end
 
   def test_reverse
-    # skip
+    skip
     assert_equal ____, [1, 2, 3].reverse
     assert_equal ____, [:a, :b, :c].reverse
   end
 
   def test_take
-    # skip
+    skip
     assert_equal [], [].take(1)
     assert_equal [], [].take(2)
     assert_equal ["a","b","c"], ["a", "b", "c", "d", "e"].take(3)
@@ -79,7 +79,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_plus
-    # skip
+    skip
     a1 = [] + []
     a2 = [] + [:a]
     a3 = [:a] + [:b]
@@ -92,14 +92,14 @@ class ArrayTest < Minitest::Test
   end
 
   def test_concat
-    # skip
+    skip
     assert_equal ____, [].concat([:a])
     assert_equal ____, [:a].concat([:b])
     assert_equal ____, [:a, :b].concat([:b, :c])
   end
 
   def test_shovel
-    # skip
+    skip
     a1 = [] << []
     a2 = [] << nil
     a3 = [] << :a
@@ -116,7 +116,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_minus
-    # skip
+    skip
     a1 = [] - []
     a2 = [:a] - []
     a3 = [:a, :b, :c] - [:a]
@@ -131,7 +131,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_pipe
-    # skip
+    skip
     a1 = [] | []
     a2 = [] | [:a]
     a3 = [:a] | [:b]
@@ -146,7 +146,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_ampersand
-    # skip
+    skip
     a1 = [] & []
     a2 = [] & [:a]
     a3 = [:a] & [:b]
@@ -172,7 +172,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_intersection_of_objects
-    # skip
+    skip
     a = Wrapper.new(:a)
     b = Wrapper.new(:b)
     b1 = Wrapper.new(:b)
@@ -189,14 +189,14 @@ class ArrayTest < Minitest::Test
   end
 
   def test_uniq
-    # skip
+    skip
     assert_equal ____, [].uniq
     assert_equal ____, [:a].uniq
     assert_equal ____, [:a, :a, :a, :b].uniq
   end
 
   def test_push
-    # skip
+    skip
     assert_equal ____, [].push(:a)
     assert_equal ____, [].push(nil)
     assert_equal ____, [].push([])
@@ -206,21 +206,21 @@ class ArrayTest < Minitest::Test
   end
 
   def test_shift
-    # skip
+    skip
     assert_equal ____, [].shift
     assert_equal ____, [:a].shift
     assert_equal ____, [:a, :b].shift
   end
 
   def test_pop
-    # skip
+    skip
     assert_equal ____, [].pop
     assert_equal ____, [:a].pop
     assert_equal ____, [:a, :b].pop
   end
 
   def test_unshift
-    # skip
+    skip
     assert_equal ____, [].unshift(:a)
     assert_equal ____, [].unshift(nil)
     assert_equal ____, [].unshift([])
@@ -230,7 +230,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_parallel_assignment
-    # skip
+    skip
     fruit = ["apple", "banana", "cherry", "dewberry"]
 
     a, b, c, d = fruit
@@ -268,7 +268,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_delete
-    # skip
+    skip
     protein = ["fish", "bacon", "chicken", "bacon", "bacon", "steak"]
 
     deleted = protein.delete("fish")
@@ -281,7 +281,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_delete_at
-    # skip
+    skip
     veggies = ["carrot", "parsnip", "courgette"]
     veggie = veggies.delete_at(1)
     assert_equal ____, veggie
@@ -289,7 +289,7 @@ class ArrayTest < Minitest::Test
   end
 
   def test_compact
-    # skip
+    skip
     assert_equal ____, ["a", "b", "c"].compact
     assert_equal ____, ["a", nil, "b", "c", nil, nil].compact
     assert_equal ____, [nil].compact
